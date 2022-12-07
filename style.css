@@ -34,7 +34,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 70px;
+    padding: 20px 70px;
     background: var(--bg-color);
     box-shadow: 1px 1px 5px #3a3a3a;
 }
@@ -65,7 +65,7 @@ body{
 .hero-banner{
     padding: 60px 12%;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
@@ -103,8 +103,9 @@ body{
 /* About */
 .about{
     width: 100%;
-    padding: 70px 12%;
-    height: 80vh;
+    margin-top: 100px;
+    padding: 170px 12% 10px 12%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
@@ -135,7 +136,8 @@ body{
 
 /* Menu */
 .menu{
-    padding: 50px 12% 90px 12%;
+    padding: 150px 12% 90px 12%;
+    height: 100vh;
 }
 .heading{
     margin-bottom: 18px;
@@ -198,7 +200,8 @@ hr{
 }
 /* LAYANAN */
 .layanan{
-    padding: 50px 12% 90px 12%;
+    padding: 120px 12% 90px 12%;
+    height: 50vh;
 }
 .layanan-container{
     display: grid;
@@ -217,4 +220,27 @@ hr{
 .details-layanan{
     font-size: 12px;
     margin-top: 5px;
+}
+
+/* CTA */
+.cta{
+    width: 70%;
+    margin: 80px auto 100px auto;
+    padding: 70px 0;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 600;
+}
+.cta span{
+    color: black;
+}
+.btn-cta{
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+.btn-cta:hover{
+    background-color: #3a3a3a;
+    padding: 12px 36px;
 }
