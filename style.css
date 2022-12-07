@@ -34,6 +34,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 35px 70px;
+    background: var(--bg-color);
 }
 .logo{
     font-size: 24px;
@@ -59,3 +60,37 @@ body{
 }
 
 /* HERO BANNER */
+.hero-banner{
+    padding: 60px 12%;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.left-hero h1{
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+.left-hero p{
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+.right-hero img{
+    max-width: 100%;
+    width: 600px;
+    margin-top: 70px;
+}
+.btn{
+    background-color: var(--main-color);
+    padding: 12px 28px;
+    border-radius: 24px;
+    color: var(--bg-color);
+    font-weight: 600;
+}
+.btn-hero:hover{
+    background-color: rgba(255, 191, 70, 0.9);
+}
