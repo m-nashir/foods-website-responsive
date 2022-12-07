@@ -135,17 +135,17 @@ body{
 
 /* Menu */
 .menu{
-    padding: 50px 12% 100px 12%;
+    padding: 50px 12% 90px 12%;
 }
-.menu-heading{
+.heading{
     margin-bottom: 18px;
 }
-.menu-heading h1{
+.heading h1{
     font-size: 30px;
     text-align: center;
     color: var(--main-color)
 }
-.menu-heading p{
+.heading p{
     text-align: center;
     color: #fff;
     margin-bottom: 30px;
@@ -192,4 +192,29 @@ body{
 .box .price i:hover{
     background-color: #FFBF46;
     color: #fff;
+}
+hr{
+    margin: 0 auto;
+}
+/* LAYANAN */
+.layanan{
+    padding: 50px 12% 90px 12%;
+}
+.layanan-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+}
+.box-layanan{
+    text-align: center;
+    padding:20px 30px;
+}
+.box-layanan img{
+    width: 50px;
+}
+.box-layanan h4{
+    color: var(--main-color)
+}
+.details-layanan{
+    font-size: 12px;
+    margin-top: 5px;
 }
