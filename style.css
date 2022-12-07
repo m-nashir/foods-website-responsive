@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500&display=swap'); 
-
+:root{
+    --main-color: #FFBF46;
+    --bg-color: #575761;
+    --text-color: #EAEAEA;
+}
 *{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -8,4 +12,50 @@
     text-decoration: none;
     list-style: none;
     outline: none;
+    scroll-behavior: smooth;
+    transition: .15s;
 }
+*::selection{
+    background: var(--main-color);
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* NAV */
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 70px;
+}
+.logo{
+    font-size: 24px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    padding: 16px 24px;
+}
+.navbar li a{
+    color: var(--text-color)
+}
+.navbar li a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* HERO BANNER */
