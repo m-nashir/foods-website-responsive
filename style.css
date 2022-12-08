@@ -50,7 +50,8 @@ body{
     padding: 16px 24px;
 }
 .navbar li a{
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: 14px;
 }
 .navbar li a:hover{
     color: var(--main-color);
@@ -58,7 +59,7 @@ body{
 #menu-icon{
     display: none;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /* HERO BANNER */
@@ -86,7 +87,7 @@ body{
     margin-top: 85px;
 }
 .btn{
-    padding: 12px 28px;
+    padding: 10px 28px;
     border-radius: 24px;
     color: var(--bg-color);
     font-weight: 600;
@@ -120,6 +121,9 @@ body{
     font-size: 30px;
     color: var(--main-color);
     margin-bottom: 10px;
+}
+.about-text p{
+    margin-bottom: 50px;
 }
 .about-text span{
     color: var(--main-color);
@@ -183,15 +187,16 @@ body{
     color:#FFBF46;
     font-weight: bold;
 }
-.box .price i{
+.box i{
     position: absolute;
     right: 0;
     top: 0;
     padding: 12px;
+    color:#FFBF46;
     border-radius: 0 14px 0 14px;
     border: 1px solid #FFBF46
 }
-.box .price i:hover{
+.box i:hover{
     background-color: #FFBF46;
     color: #fff;
 }
@@ -248,7 +253,8 @@ hr{
 
 /*** FOOTER ***/
 #footer{
-    padding: 25px 12% 10px 12%;
+    padding: 35px 12% 10px 12%;
+    background-color: #3a3a3a;
 }
 #hubungi{
     position: relative;
@@ -305,3 +311,267 @@ hr{
     text-align: center;
     margin-top: 5px;
 }
+
+
+/*************** RESPONSIVE ****************/
+@media (max-width: 1080px){
+    .nav{
+        padding: 15px 30px;
+    }
+    .nav .logo{
+        font-size: 20px;
+    }
+    .navbar li{
+        padding: 12px 18px;
+    }
+
+    /*HERO BANNER*/
+    .hero-banner{
+        padding: 60px 10%;
+    }
+    .left-hero h1{
+        font-size: 40px;
+    }
+    .left-hero p{
+        font-size: 14px;
+    }
+    .right-hero img{
+        width: 500px;
+    }
+    .btn{
+        padding: 8px 24px;
+    }
+
+    /*ABOUT*/    
+    .about{
+        padding: 170px 10% 10px 10%;  
+    }
+    .about-img img{
+        width: 330px;
+    }
+    .about-text h1{
+        font-size: 24px;
+    }
+    .about-text p{
+        font-size: 14px;
+    }
+
+    /* MENU */
+    .menu{
+        padding: 120px 10% 80px 10%;
+    }
+    .heading h1{
+        font-size: 24px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+    .box .box-img img{
+        width: 50%;
+    }
+    .box h3{
+        font-size: 18px;
+    }
+
+    /* LAYANAN */
+    .layanan{
+        padding: 100px 80px 10%
+    }
+    .box-layanan {
+        padding: 8px 20px 30px;
+    }
+    .details-layanan{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    /* CTA */
+    .cta{
+        margin: 65px auto 100px auto;
+        padding: 45px;
+    }
+    .btn-cta:hover{
+        background-color: #3a3a3a;
+        padding: 8px 36px;
+    }
+
+    /* FOOTER */
+    #footer{
+        padding: 15px 10% 8px 10%;
+    }
+    .col h4{
+        font-size: 16px;
+    }
+    .col ul li a{
+        color: rgb(163, 162, 162);
+        font-size: 13px;
+    }
+    .social i{
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@media (max-width: 767px){
+    #menu-icon{
+        display: initial;
+    }
+    #menu-icon:hover{
+        color: var(--main-color)
+    }
+    .nav{
+        position: relative;
+    }
+    .navbar{
+        position: absolute;
+        top: -1000%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(58, 58, 58, 1);
+    }
+    .navbar li{
+        padding: 0;
+    }
+    .navbar li a{
+        display: block;
+        padding: 14px 0;
+    }
+    .navbar li a:hover{
+        background-color: var(--bg-color)
+    }
+
+    /*HERO BANNER*/
+    .hero-banner{
+        padding: 0 8%;
+        height: 40vh;
+    }
+    .left-hero h1{
+        font-size: 30px;
+    }
+    .left-hero p{
+        font-size: 12px;
+    }
+    .right-hero img{
+        width: 500px;
+        margin-top: 60px;
+    }
+    .btn{
+        padding: 6px 20px;
+    }
+
+     /*ABOUT*/    
+     .about{
+        padding: 140px 8% 0px 8%;
+        position: relative;  
+    }
+    .about-img img{
+        width: 270px;
+    }
+    .about-text h1{
+        font-size: 20px;
+    }
+    .about-text p{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .btn-about{
+        font-size: 12px;
+        position: absolute;
+        right: 7%;
+    }
+
+    /* MENU */
+    .menu{
+        padding:0px 8% 80px 8%;
+        height: 50vh;
+        margin-bottom: 60px;
+    }
+    
+    .menu-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.6rem;
+    }
+    .heading h1{
+        font-size: 22px;
+    }
+    .heading p{
+        font-size: 12px;
+    }
+    .box{
+        padding: auto 15px;
+    }
+    .box .box-img img{
+        width: 45%;
+    }
+    .box h3{
+        font-size: 14px;
+    }
+    .box p:nth-child(3){
+        font-size: 11px;
+    }
+
+    /* LAYANAN */
+    .layanan{
+        padding: 70px 6% 40px 6%;
+    }
+    .layanan-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5rem;
+    }
+    .box-layanan {
+        padding: 8px 20px 30px;
+    }
+    .box-layanan h4{
+        color: var(--main-color);
+        font-size: 14px;
+    }
+    .details-layanan{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    /* CTA */
+    .cta{
+        margin: 45px auto 100px auto;
+        padding: 35px;
+    }
+    .btn-cta{
+        font-size: 12px;
+        padding: 8px 30px;
+    }
+    .btn-cta:hover{
+        background-color: #3a3a3a;
+        padding: 8px 36px;
+    }
+
+    /* FOOTER */
+    #footer{
+        padding: 15px 8% 10px 8%;
+        height: 90vh;
+    }
+    #hubungi{
+        position: relative;
+    }
+    .col{
+        padding: 20px 0;
+        width: 50%;
+        margin-bottom: 5px;
+    }
+    .col h4{
+        font-size: 14px;
+    }
+    .col ul li a{
+        color: rgb(163, 162, 162);
+        font-size: 13px;
+    }
+    .social i{
+        font-size: 12px;
+        padding: 8px;
+    }
+    .copyright{
+        margin-top: 180px;
+    }
+}
+
