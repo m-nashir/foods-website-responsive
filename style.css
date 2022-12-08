@@ -314,7 +314,7 @@ hr{
 
 
 /*************** RESPONSIVE ****************/
-@media (max-width: 1080px){
+@media (max-width: 1280px){
     .nav{
         padding: 15px 30px;
     }
@@ -411,7 +411,8 @@ hr{
         padding: 8px;
     }
 }
-@media (max-width: 767px){
+
+@media (max-width: 967px){
     #menu-icon{
         display: initial;
     }
@@ -575,3 +576,104 @@ hr{
     }
 }
 
+@media (max-width: 686px) {
+    .hero-banner, .about, .menu-container, .layanan-container {
+        grid-template-columns: 1fr;
+    }
+    .hero-banner{
+        padding: 50px 6% 10px 6%;
+        text-align: center;
+        height: 90vh;
+    }
+    .hero-banner::after{
+        content: "";
+        width: 60px;
+        height: 1.5px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .left-hero h1{
+        font-size: 50px;
+    }
+    .left-hero p{
+        font-size: 16px;
+    }
+    .right-hero img{
+        width: 350px;
+        padding-bottom: 20px;
+    }
+
+    /* ABOUT */
+    .about{
+        padding: 100px 6% 0 6%;
+        text-align: center;
+        height: 120vh;
+    }
+    .about::after{
+        content: "";
+        width: 60px;
+        height: 1.5px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .about-img img{
+        width: 310px;
+    }
+    .about-text h1{
+        text-align: center;
+        margin-top: -30px;
+        font-size: 20px;
+    }
+
+    /* MENU */
+    .menu{
+        padding:0px 8% 80px 8%;
+        height: 150vh;
+        margin-bottom: 60px;
+    }
+    .heading h1{
+        font-size: 22px;
+    }
+    .heading p{
+        font-size: 12px;
+    }
+    .box{
+        padding: 30px 0px;
+    }
+    .box .box-img img{
+        width: 25%;
+    }
+    .box h3{
+        font-size: 18px;
+    }
+    .box p:nth-child(3){
+        font-size: 13px;
+    }
+
+    /* LAYANAN */
+    .layanan{
+        padding: 50px 6% 40px 6%;
+        height: 105vh;
+        margin-bottom: 100px;
+    }
+    .box-layanan {
+        padding: 8px 20px 30px;
+    }
+    .box-layanan img{
+        width: 60px;
+    }
+    .box-layanan h4{
+        color: var(--main-color);
+        font-size: 18px;
+    }
+    .details-layanan{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    /* CTA */
+    .cta{
+        margin: 45px auto 100px auto;
+        padding: 35px;
+    }
+}
